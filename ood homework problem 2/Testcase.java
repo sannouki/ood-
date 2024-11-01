@@ -33,7 +33,7 @@ public class Testcase {
         //battery 500 delivery drone flightrange 5000 special feature: drop
         System.out.println("test");
         //creating the drone with custom parameters
-        Drone professorRoysDeliveryDrone = manufacturerB.createAgricultureDrone(500, 5000, "drop");
+        Drone professorRoysDeliveryDrone = manufacturerB.createDeliveryDrone(500, 5000, "drop");
         //printing the drone
         professorRoysDeliveryDrone.displayDroneDetails(professorRoysDeliveryDrone);
     }
