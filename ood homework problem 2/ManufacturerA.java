@@ -18,6 +18,20 @@ public class ManufacturerA implements Manufacturer{
     public AgricultureDrone createAgricultureDrone() {
         return new AgricultureDrone(1000, 100,"planting and cropping");
     }
-
+//solution to make the drones customizable
+        // Overloaded method change drones custom details for the 3 kinds of drones
+        public AgricultureDrone createAgricultureDrone(int battery, double flightRange, String specialFeature) {
+            return new AgricultureDrone(battery, flightRange, specialFeature);
+        }
+    
+        public DeliveryDrone createDeliveryDrone(int battery, double flightRange, String specialFeature) {
+            return new DeliveryDrone(battery, flightRange, specialFeature);
+        }
+    
+        public SurveillanceDrone createSurveillanceDrone(int battery, double flightRange, String specialFeature) {
+            return new SurveillanceDrone(battery, flightRange, specialFeature);
+        }
 }
+
+
 
