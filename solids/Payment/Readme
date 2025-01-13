@@ -1,0 +1,3 @@
+this violate single responsibility principle. to fix this i seperate each function into 3 classes.
+employee, payroll, and payslip.
+

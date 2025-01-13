@@ -1,0 +1,43 @@
+Design pattern used: OBSERVER and COMPOSITE.
+
+Observer: T used the observer to subscribe customers to black friday deals. 
+this is useful because it effectively notify those who are subscribed and those who were not.
+
+Composite: this pattern was used because i needed the category to be able to contain other subcategories
+and products (the leaf).
+this pattern help my code to be efficient in many ways
+the first step, the hierarchy of the composite design is the blackfriday deal being able to contain
+other subcategories like clothing and electronics. 
+the second step is each of those categories contain their own products such as headphones or jackets.
+
+how my code works:
+I have an abstract class for the product to structure what my product should have. (a name, a price, 
+to display.) Then in my product class I implemented concrete functions. Which get overrided through
+concrete products made in main. 
+
+The customer class defines a customer. each customer has a name and a function to recieve notifications.
+The notification is notified when a subscriber is subscribe to the blackfriday deal. 
+
+Blackfridaydeal allows flexibility with adding removing subscribers on top of notifying subscribers.
+additionally, it make sure only every individual customer can subscribe once. 
+the Blackfridaydeal class also logs rather a customer is currently subscribed or not.
+~~~~~~~~~
+Resources:
+Stone: I look over his code and compared it with mine in an attempt to fix his 
+method with using a boolean.
+
+Tutor with Nate: I had him look over my code and discuss if my implementation 
+for the observer pattern is correct.
+
+Paige: we discuss different ways to display rather a customer is currently subscribed or not.
+I also reference and used paige idea for making sure customers cannot subscribe if they are already 
+subscribed. 
+
+copilot:
+I basically had to generate the code for check subscribers. but also somewhat based on paiges ideas
+while still keeping it compatible with my current code.
+
+I had copilot generate me an idea for the price in category since category does not contain its own
+value. so i made it return 0.
+
+Debug a few errors in blackfriday deals regarding adding to allcustomer array.

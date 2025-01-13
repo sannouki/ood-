@@ -1,0 +1,5 @@
+process payment can only take 2 options and we should be able to pass any payment type.
+
+this violate open close as they should not be able to change the different payment methods 
+but be able to add new ones. such as a new creditcard, debit, paypal, and more
+

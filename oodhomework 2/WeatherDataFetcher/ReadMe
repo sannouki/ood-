@@ -1,0 +1,29 @@
+Pattern used:
+The two design patterns that I used are COMMAND pattern and TEMPLATE pattern.
+
+template:
+I used the Template pattern to build the skeleton of the workflow. 
+the reason this pattern was bested used for my code was because there was multiple predictions that 
+had the same structure. (fetch data, processdata, apply data to a model, and display result.)
+
+Only differences to point out is that the two kind of predictions contains different data.
+
+the way I coded the template pattern was by creating an abstract class which is then
+implemented by concrete classes. 
+
+command pattern:
+the command pattern is effective because it allows flexibility with controlling tasks. (adding, removing, tracking). The command pattern allows each prediction methods to be consistant since they maintain the same tasks throughout different predictions through the invoker. 
+
+how I used both together:
+the template as previously mentioned, maintain structure by creating a skeleton allowing implementation for
+concrete classes. Those concrete classes are the what being invoked by the command.
+Also when the commands are invoked, it acts like a queue which executes one by one. allowing organization for creating other prediction patterns.
+
+----
+resources:
+paige: helpped her with the command classes and invoker
+mark: I had him look over my code.
+slides for command and template: to structure the classes  
+
+copilot: to fix my overriding methods in machine learning prediction:
+and to help create my invoker add and remove function

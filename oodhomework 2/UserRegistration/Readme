@@ -1,0 +1,16 @@
+pattern: I use the was chain of responsibility. the reason i used this pattern 
+because i had to handle multiple different validations. and because we collect
+different registration details, each validations had to be handled through 
+different validators. 
+
+resources (a lot of copilot...)
+used copilot to debug validator not being able to chain
+generated the error exception for password
+TUTOR NATE: help me figure out where to place ui for uml. 
+
+collaboration:
+asked stone to make sure of chain of responsibility is the only pattern
+had paige help on structuring my assignment. 
+implement paige suggestion of creating a frame class instead of creating it all in main
+compare differences and check requiredments.
+I also discuss with mark on how to fix his validation.
